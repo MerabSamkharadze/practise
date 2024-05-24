@@ -98,3 +98,48 @@ chekH: while (h < 4) {
     l--;
   }
 }
+
+//
+
+function checkAge(age) {
+  return age > 18 ? true : "Did parents allow you?";
+}
+let resultNewCheckAge = checkAge(112);
+console.log(resultNewCheckAge);
+
+//
+
+function min(a, b) {
+  return a < b ? a : b;
+}
+
+console.log(min(10, 20));
+
+//
+
+function pow(x, n) {
+  return x ** n;
+}
+
+console.log(pow(5, 3));
+
+//
+
+let multiply = pow;
+console.log(multiply(2, 3));
+
+// callback function
+
+function getGender(questen, yes, no) {
+  confirm(questen) ? yes() : no();
+}
+
+getGender(
+  "if you are men, click ok else click no",
+  function () {
+    alert("you are man");
+  },
+  function () {
+    alert("you are woman");
+  }
+);
