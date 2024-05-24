@@ -39,3 +39,62 @@ if (checkAge(age)) {
 } else {
   alert("Access denied!");
 }
+
+//////////////////////
+
+function isPrime(n) {
+  for (let i = 2; i < n; i++) {
+    if (n % i == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+let isPrimeResult = isPrime(2);
+console.log(isPrimeResult);
+
+/////////////
+
+function showPrimes(n) {
+  nextPrime: for (let i = 2; i < n; i++) {
+    for (let j = 2; j < i; j++) {
+      if (i % j == 0) continue nextPrime;
+    }
+
+    console.log(i);
+  }
+}
+showPrimes(2);
+
+// continue
+
+let i = 0;
+let j = 8;
+
+checkIAndJ: while (i < 4) {
+  console.log(`i: ${i}`);
+  i += 1;
+
+  checkJ: while (j > 4) {
+    console.log(`j: ${j}`);
+    j -= 1;
+
+    if (j % 2 === 0) continue checkJ;
+    console.log(`${j} is odd.`);
+  }
+  console.log(`i = ${i}`);
+  console.log(`j = ${j}`);
+}
+
+let h = 0;
+let l = 5;
+chekH: while (h < 4) {
+  console.log(h);
+  h++;
+  chekL: while (h < l) {
+    console.log(l);
+    l--;
+  }
+}
