@@ -171,3 +171,15 @@ ask(
 //////////////////
 
 console.log("Hello world!");
+
+// foreach
+
+let myArray = ["mero", "leo", "mzio", "jabu"];
+
+myArray.forEach((person, index, array) =>
+  console.log(
+    `${person} is number ${index} in ${array} and ${
+      person === "mzio" ? "she" : "he"
+    } is super!`
+  )
+);
