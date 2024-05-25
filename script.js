@@ -230,3 +230,13 @@ let hobies = [
 
 let sentence = hobies.map((element) => "i love " + "" + element);
 console.log(sentence);
+
+// sort method
+
+let mesedNumbers = [
+  12, 34, 22, 1345, 677, 8765543, 435, 2, 53465745346, 1000000000000, 55, 7,
+];
+
+mesedNumbers.sort((a, b) => b - a);
+
+console.log(mesedNumbers);
