@@ -183,3 +183,12 @@ myArray.forEach((person, index, array) =>
     } is super!`
   )
 );
+
+// arr.indexof(item, from) & arr.includes(item, from)
+
+let family = ["mero", "leo", "mzio", "jabu"];
+
+let resultOfIndexOf = family.indexOf("leo");
+let resultOfIncludes = family.includes("mzio");
+console.log(resultOfIndexOf);
+console.log(resultOfIncludes);
