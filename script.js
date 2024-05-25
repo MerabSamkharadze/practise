@@ -217,3 +217,16 @@ let someUsers = filteredUsers.filter((item) => item.id < 3);
 let userFilteres = filteredUsers.filter((element) => element.id > 0);
 
 console.log(userFilteres);
+
+// map method
+
+let hobies = [
+  "swimming",
+  "cycling",
+  "walking",
+  "listenig to music",
+  "watching movies",
+];
+
+let sentence = hobies.map((element) => "i love " + "" + element);
+console.log(sentence);
