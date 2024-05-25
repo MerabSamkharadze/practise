@@ -167,3 +167,7 @@ ask(
   () => alert("You agreed."),
   () => alert("You canceled the execution.")
 );
+
+//////////////////
+
+console.log("Hello world!");
