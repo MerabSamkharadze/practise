@@ -192,3 +192,15 @@ let resultOfIndexOf = family.indexOf("leo");
 let resultOfIncludes = family.includes("mzio");
 console.log(resultOfIndexOf);
 console.log(resultOfIncludes);
+
+// find method
+
+let users = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Pete" },
+  { id: 3, name: "Mary" },
+  { id: 4, name: "John" },
+];
+
+let user = users.find((element) => element.name === "Mary");
+console.log(user.id);
