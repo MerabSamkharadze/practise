@@ -204,3 +204,16 @@ let users = [
 
 let user = users.find((element) => element.name === "Mary");
 console.log(user.id);
+
+// filter method
+
+let filteredUsers = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Pete" },
+  { id: 3, name: "Mary" },
+];
+
+let someUsers = filteredUsers.filter((item) => item.id < 3);
+let userFilteres = filteredUsers.filter((element) => element.id > 0);
+
+console.log(userFilteres);
