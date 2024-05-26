@@ -261,3 +261,10 @@ console.log(firs2Wolunters);
 let myName = "Merabinho";
 let spelledMyName = myName.split("");
 console.log(spelledMyName);
+
+// join method
+
+let wordsArr = ["Hello", "Merabinho"];
+
+let joinedWodrdsArr = wordsArr.join(" ");
+console.log(joinedWodrdsArr);
