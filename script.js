@@ -248,5 +248,16 @@ console.log(countries.sort((a, b) => b.localeCompare(a)));
 // reverse method
 
 let rowNumbers = [1, 3, 5, 7, 9];
-let reversedRowNumbers = rowNumbers.reverse();
-console.log(reversedRowNumbers);
+rowNumbers.reverse();
+console.log(rowNumbers);
+
+// split method
+
+let volunters = "ana, gio, cuxo, joni, aglo, usho, piro, bertyi";
+let voluntersArr = volunters.split(", ");
+let firs2Wolunters = volunters.split(", ", 2);
+console.log(firs2Wolunters);
+
+let myName = "Merabinho";
+let spelledMyName = myName.split("");
+console.log(spelledMyName);
