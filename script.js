@@ -302,3 +302,12 @@ function camelize(string) {
 console.log(camelize("background-color"));
 console.log(camelize("list-style-image"));
 console.log(camelize("-webkit-transition"));
+
+//task 2
+
+let arr = [5, 3, 8, 1];
+
+function filterRange(arr, min, max) {
+  return arr.filter((itam) => itam >= min && itam <= max);
+}
+console.log(filterRange(arr, 1, 4));
