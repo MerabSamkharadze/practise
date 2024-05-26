@@ -305,9 +305,46 @@ console.log(camelize("-webkit-transition"));
 
 //task 2
 
-let arr = [5, 3, 8, 1];
+// let arr = [5, 3, 8, 1];
 
 function filterRange(arr, min, max) {
   return arr.filter((itam) => itam >= min && itam <= max);
 }
 console.log(filterRange(arr, 1, 4));
+
+// task 3
+function filterRangeInPlace(arr, a, b) {
+  for (let i = 0; i < arr.length; i++) {
+    let val = arr[i];
+
+    // remove if outside of the interval
+    if (val < a || val > b) {
+      arr.splice(i, 1);
+      i--;
+    }
+  }
+}
+
+let arr = [5, 3, 8, 1];
+
+filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
+
+console.log(arr);
+
+// task 4
+
+let arrNumbers = [5, 2, 1, -10, 8];
+
+console.log(arrNumbers.sort((a, b) => b - a));
+
+// task 5
+
+let arrLanguages = ["HTML", "JavaScript", "CSS"];
+
+function sort(arr) {
+  return arr.slice().sort();
+}
+
+let newArr = sort(arrLanguages);
+console.log(newArr);
+console.log(arrLanguages);
