@@ -243,4 +243,10 @@ console.log(mesedNumbers);
 
 let countries = ["ბათუმი", "ჭიათურა", "რუსთავი", "ქუთაისი"];
 
-console.log(countries.sort((a, b) => a.localeCompare(b)));
+console.log(countries.sort((a, b) => b.localeCompare(a)));
+
+// reverse method
+
+let rowNumbers = [1, 3, 5, 7, 9];
+let reversedRowNumbers = rowNumbers.reverse();
+console.log(reversedRowNumbers);
