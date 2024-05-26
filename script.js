@@ -268,3 +268,13 @@ let wordsArr = ["Hello", "Merabinho"];
 
 let joinedWodrdsArr = wordsArr.join(" ");
 console.log(joinedWodrdsArr);
+
+// reduce method
+
+let numberOfApples = [1, 2, 3, 4, 5];
+
+let whoolNamberOfApples = numberOfApples.reduce(
+  (acumulator, item) => acumulator + item,
+  0
+);
+console.log(whoolNamberOfApples);
