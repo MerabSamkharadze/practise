@@ -240,3 +240,7 @@ let mesedNumbers = [
 mesedNumbers.sort((a, b) => b - a);
 
 console.log(mesedNumbers);
+
+let countries = ["ბათუმი", "ჭიათურა", "რუსთავი", "ქუთაისი"];
+
+console.log(countries.sort((a, b) => a.localeCompare(b)));
