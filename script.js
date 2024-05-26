@@ -278,3 +278,8 @@ let whoolNamberOfApples = numberOfApples.reduce(
   0
 );
 console.log(whoolNamberOfApples);
+
+// Array.isArray([])
+
+numberOfApples = [1, 2, 3, 4, 5];
+console.log(Array.isArray(numberOfApples));
