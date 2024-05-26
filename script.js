@@ -283,3 +283,22 @@ console.log(whoolNamberOfApples);
 
 numberOfApples = [1, 2, 3, 4, 5];
 console.log(Array.isArray(numberOfApples));
+
+////////////////////////////////////////////
+// !!!!!!!!!!!!!!!!Tasks!!!!!!!!!!!!!!!!!!!!
+////////////////////////////////////////////
+
+// task 1
+
+function camelize(string) {
+  return string
+    .split("-")
+    .map((word, index) =>
+      index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+    )
+    .join("");
+}
+
+console.log(camelize("background-color"));
+console.log(camelize("list-style-image"));
+console.log(camelize("-webkit-transition"));
