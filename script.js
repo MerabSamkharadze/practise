@@ -362,11 +362,26 @@ console.log(calculator("20-11"));
 
 // task 7
 
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 28 };
 
 let userss = [john, pete, mary];
 
 let names = userss.map((item) => item.name);
 console.log(names);
+
+//task 8
+
+let john = { name: "John", surname: "Smith", id: 1 };
+let pete = { name: "Pete", surname: "Hunt", id: 2 };
+let mary = { name: "Mary", surname: "Key", id: 3 };
+
+let users1 = [john, pete, mary];
+
+let usersMapped = users1.map((item) => ({
+  fullName: `${item.name} ${item.surname}`,
+  id: item.id,
+}));
+
+console.log(usersMapped);
