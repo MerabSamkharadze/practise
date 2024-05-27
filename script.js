@@ -463,3 +463,30 @@ function getAverageAge2Way(users) {
 }
 let res = getAverageAge2Way(arr12);
 console.log(res);
+
+// task 12
+
+let strings = [
+  "Hare",
+  "Krishna",
+  "Hare",
+  "Krishna",
+  "Krishna",
+  "Krishna",
+  "Hare",
+  "Hare",
+  ":-O",
+];
+
+function unique(arr) {
+  let unic = [];
+  for (let item of arr) {
+    if (!unic.includes(item)) {
+      unic.push(item);
+    }
+  }
+  return unic;
+}
+
+let ress = unique(strings);
+console.log(ress);
