@@ -399,7 +399,7 @@ console.log(arr10);
 
 // task 10
 
-let arr20 = [1, 2, 3];
+// let arr20 = [1, 2, 3];
 
 let shufle = (arr) => {
   arr20.sort(() => Math.random() - 0.5);
@@ -414,3 +414,32 @@ shufle(arr20);
 console.log(arr20);
 shufle(arr20);
 console.log(arr20);
+
+//better way
+let arr20 = [1, 2, 3];
+
+function shufle(arr) {
+  for (let i = arr.length - 1; i > 1; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+}
+
+shufle(arr20);
+console.log(arr20);
+//count results
+let results = {
+  123: 0,
+  132: 0,
+  213: 0,
+  231: 0,
+  312: 0,
+  321: 0,
+};
+
+for (let i = 0; i < 1000000; i++) {
+  shufle(arr20);
+  results[arr20.join("")]++;
+}
+console.log(results);
+// task 11
