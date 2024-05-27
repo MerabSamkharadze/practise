@@ -359,3 +359,14 @@ function calculator(str) {
 }
 
 console.log(calculator("20-11"));
+
+// task 7
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let userss = [john, pete, mary];
+
+let names = userss.map((item) => item.name);
+console.log(names);
