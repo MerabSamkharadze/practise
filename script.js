@@ -490,3 +490,22 @@ function unique(arr) {
 
 let ress = unique(strings);
 console.log(ress);
+
+// last tast for today
+
+let users2 = [
+  { id: "john", name: "John Smith", age: 20 },
+  { id: "ann", name: "Ann Smith", age: 24 },
+  { id: "pete", name: "Pete Peterson", age: 31 },
+];
+
+function groupById(arr) {
+  let obj = {};
+  arr.forEach((item) => {
+    obj[item.name] = item;
+  });
+  return obj;
+}
+
+let usersById = groupById(users2);
+console.log(usersById);
