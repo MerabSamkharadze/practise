@@ -388,9 +388,9 @@ console.log(usersMapped);
 
 //task 9
 
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 28 };
 
 let arr10 = [pete, john, mary];
 
@@ -443,3 +443,23 @@ for (let i = 0; i < 1000000; i++) {
 }
 console.log(results);
 // task 11
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 29 };
+
+let arr12 = [john, pete, mary];
+// let sum = 0;
+// function getAverageAge(users) {
+//   users.forEach((item) => (sum += item.age));
+//   return sum / users.length;
+// }
+// let res = getAverageAge(arr12);
+// console.log(res);
+
+// another way
+
+function getAverageAge2Way(users) {
+  return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+}
+let res = getAverageAge2Way(arr12);
+console.log(res);
