@@ -373,9 +373,9 @@ console.log(names);
 
 //task 8
 
-let john = { name: "John", surname: "Smith", id: 1 };
-let pete = { name: "Pete", surname: "Hunt", id: 2 };
-let mary = { name: "Mary", surname: "Key", id: 3 };
+// let john = { name: "John", surname: "Smith", id: 1 };
+// let pete = { name: "Pete", surname: "Hunt", id: 2 };
+// let mary = { name: "Mary", surname: "Key", id: 3 };
 
 let users1 = [john, pete, mary];
 
@@ -385,3 +385,14 @@ let usersMapped = users1.map((item) => ({
 }));
 
 console.log(usersMapped);
+
+//task 9
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let arr10 = [pete, john, mary];
+
+arr10.sort((a, b) => a.age - b.age);
+console.log(arr10);
