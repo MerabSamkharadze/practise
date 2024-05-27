@@ -348,3 +348,14 @@ function sort(arr) {
 let newArr = sort(arrLanguages);
 console.log(newArr);
 console.log(arrLanguages);
+
+// task 6
+
+function calculator(str) {
+  let numbersArr = str.split(str.includes("+") ? "+" : "-");
+  let firstNum = Number(numbersArr[0]);
+  let secondNum = Number(numbersArr[1]);
+  return str.includes("+") ? firstNum + secondNum : firstNum - secondNum;
+}
+
+console.log(calculator("20-11"));
