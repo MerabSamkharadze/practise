@@ -396,3 +396,21 @@ let arr10 = [pete, john, mary];
 
 arr10.sort((a, b) => a.age - b.age);
 console.log(arr10);
+
+// task 10
+
+let arr20 = [1, 2, 3];
+
+let shufle = (arr) => {
+  arr20.sort(() => Math.random() - 0.5);
+};
+shufle(arr20);
+console.log(arr20);
+shufle(arr20);
+console.log(arr20);
+shufle(arr20);
+console.log(arr20);
+shufle(arr20);
+console.log(arr20);
+shufle(arr20);
+console.log(arr20);
